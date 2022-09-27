@@ -1,0 +1,53 @@
+.products {
+  position: relative;
+  display: inline-flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+  align-self: center;
+}
+.product{
+  width: 20rem;
+    padding: 0px 10px;
+}
+.picture img {
+  width: 20rem;
+  height: 25rem;
+  position: relative;
+  overflow: hidden;
+  padding: 2rem 0.5rem 0.5rem 0.5rem;
+  border-radius: 1rem 1rem 0 0;
+}
+button {
+  margin: 0px 5px;
+  border: 0px;
+  padding: 5px 5px;
+  border-radius: 5px;
+}
+button:hover {
+  background-color: var(--color-primary);
+  color: var(--color-white);
+}
+.disabled, .disabled:hover{
+  cursor: wait;
+  color: black;
+  background-color: silver;
+  
+}
+input{
+  font-size: 1rem;
+  font-weight: 300;
+  padding: 5px 5px;
+  margin: 5px 5px;
+  border-radius: 5px;
+  color: black
+}
+input::placeholder{
+  color: silver
+}
+/* ========== Media  Queries (SMALL DEVICES)===============*/
+@media screen and (max-width: 600px) {
+  .products {
+    grid-template-columns: 1fr;
+  }
+}
