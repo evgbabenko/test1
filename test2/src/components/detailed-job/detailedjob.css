@@ -1,0 +1,134 @@
+section.jobdetails {
+  margin: 3rem 0;
+}
+
+section.jobdetails .container {
+  width: 70rem;
+  padding: 2rem;
+  border: 1px solid var(--color-light);
+  border-radius: 1rem;
+  display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 1rem;
+}
+
+section.jobdetails .container .map{
+    width: 300px !important;
+    height: 300px !important;
+    background: var(--color-light);
+    border: 1px solid var(--color-light);
+    border-radius: 1rem;
+    padding: 1.5rem;
+}
+
+section.jobdetails .container .header {
+  display: inline-flex;
+  border-bottom: 1px solid var(--color-black);
+  width: 100%;
+}
+
+section.jobdetails .container .btn-box {
+  width: 100% !important;
+  margin: 3rem 0;
+}
+section.jobdetails .container .header .title {
+  color: var(--color-black);
+  font-size: 4rem;
+  font-weight: 700;
+}
+
+section.jobdetails .container .title-box {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 2rem;
+}
+
+section.jobdetails .container .title-box .job-title {
+  color: var(--color-black);
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+section.jobdetails .container .title-box .job-salary {
+  color: var(--color-light);
+  font-size: 1.5rem;
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+section.jobdetails .container .posted {
+  margin: 1rem 0;
+  color: var(--color-light);
+}
+
+section.jobdetails .container .job-description {
+  color: var(--color-dark);
+  font-size: 1.2rem;
+}
+
+section.jobdetails .container .job-benefits {
+  margin: 1.5rem 0;
+}
+
+section.jobdetails .container .job-benefits .ul-benefits {
+  color: var(--color-black);
+  font-weight: 500;
+}
+
+section.jobdetails .container .job-benefits .ul-benefits li:nth-child(even) {
+  padding: 0.5rem 0;
+}
+
+section.jobdetails .container .job-benefits .ul-benefits li::before {
+  content: "- ";
+}
+
+section.jobdetails .container .additional-info{
+    color: var(--color-dark);
+}
+
+section.jobdetails .container .additional-info h4{
+    margin: 1rem 0;
+}
+
+section.jobdetails .container .additional-info .a-info{
+    display: inline-flex;
+    gap: 1rem;
+}
+
+section.jobdetails .container .images {
+    margin: 2rem 0;
+}
+
+section.jobdetails .container .images .info-images{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem
+}
+
+section.jobdetails .container .images .info-images img{
+    border-radius: 1rem;
+}
+
+section.jobdetails .container .map .name,
+section.jobdetails .container .map .email,
+section.jobdetails .container .map .phone,
+section.jobdetails .container .map .address{
+    margin: 0.5rem 0;
+}
+
+section.jobdetails .container .map .name{
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+section.jobdetails .container .map .email,
+section.jobdetails .container .map .phone{
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+section.jobdetails .container .map .address{
+    font-size: 1.2rem;
+    font-weight: 600;
+}

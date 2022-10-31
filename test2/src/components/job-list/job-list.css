@@ -1,0 +1,88 @@
+section.joblist {
+  background: var(--color-light);
+}
+
+section.joblist .container {
+  width: 70rem;
+  padding: 2rem;
+}
+
+section.joblist .list {
+  background: var(--color-white);
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  font-size: 0.9rem;
+  margin-bottom: 2rem;
+  cursor: pointer;
+  border-radius: 1rem;
+}
+
+section.joblist .list .head {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+section.joblist .list .head .profile-area {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  gap: 1rem;
+}
+
+section.joblist .list .head .profile-area .avatar {
+  width: 5rem !important;
+  height: 5rem !important;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+section.joblist .list .list-footer {
+    width: 5rem !important;
+    height: 5rem !important;
+    border-radius: 50%;
+    overflow: hidden;
+  }
+
+section.joblist .list .head .profile-area .info .benefits {
+  list-style: none;
+  color: var(--color-dark);
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: 1rem 0;
+}
+
+section.joblist .list .head .profile-area .info .location {
+    list-style: none;
+    color: var(--color-dark);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+/* section.joblist .list .head .profile-area .info .benefits li:nth-child(even){
+    
+} */
+
+section.joblist .list .head .profile-area .info .benefits li:nth-child(even)::before{
+    content: '*';
+    padding: 0 0.2rem;
+}
+
+section.joblist .list .head .stars {
+  color: var(--color-stars);
+  font-size: 1.1rem;
+  white-space: nowrap;
+}
+
+@media screen and (max-width: 1100px) {
+  section.joblist .container {
+    width: 95vw;
+    grid-template-columns: 1fr;
+  }
+  section.joblist .list .head .stars {
+    font-size: 0.7rem;
+  }
+}
